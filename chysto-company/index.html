@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap"
+    rel="stylesheet">
+  <title>ЧистоФайноц — Клінінгова компанія</title>
+  <style>
+    /* font-family: "Caveat", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Tagesschrift", system-ui;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+ */
+
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e88e5;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .hero {
+      background: url('top-img.jpg') center/cover no-repeat;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .container {
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      background: white;
+      padding: 3rem;
+      border-radius: 15px;
+      margin-bottom: 3rem;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: #1e88e5;
+      margin-top: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #e53935;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .reviews blockquote {
+      font-style: italic;
+      border-left: 5px solid #1e88e5;
+      padding-left: 1.2rem;
+      margin: 1.5rem 0;
+    }
+
+    .partners img {
+      width: 150px;
+      margin: 10px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .partners img:hover {
+      filter: none;
+    }
+
+    .cta {
+      text-align: center;
+      background: #1e88e5;
+      color: white;
+      padding: 4rem 1rem;
+    }
+
+    .cta h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta a {
+      background: #e53935;
+      color: white;
+      padding: 1.2rem 2.5rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #0d47a1;
+      color: white;
+    }
+  </style>
+  <link rel="stylesheet" href="registr.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Клінінг, якому довіряють!</h1>
+      <nav>
+
+
+        <a href=""></a>
+        <a href="#about">Про нас</a>
+        <a href="#services">Послуги</a>
+        <a href="#why">Чому ми</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#partners">Партнери</a>
+        <a href="#contact">Контакти</a>
+
+
+      </nav>
+  </header>
+  <div class="hero">
+    Професійне прибирання квартир, будинків, офісів
+  </div>
+  <div class="container">
+    <div class="row" id="about">
+      <div class="col-md-6">
+        <h2>Про нас</h2>
+        <p>Клінінгова компанія "Чисто і Блиск" понад 10 років забезпечує якісне прибирання в Києві та по всій Україні.
+          Ми
+          працюємо з приватними клієнтами та бізнесами, надаючи широкий спектр послуг з прибирання, дезінфекції,
+          хімчистки
+          й утримання чистоти на найвищому рівні.</p>
+        <img src="6.jfif" alt="Наша команда" style="width:400px ; border-radius:12px; margin-top:1rem;">
+      </div>
+      <div class="col-md-6">
+        <img src="img-1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="hhhh">
+    <div class="container fon-wather">
+      <div class="row my-5  justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>Наша історія</h2>
+          <p>  Усе почалося з мрії зробити буденність людей комфортнішою, а простір — чистішим. У 2018 році засновниця
+            компанії "Чисто.Pro" Олена Мельник, працюючи офіс-менеджеркою, зрозуміла, наскільки важко знайти надійну
+            клінінгову службу, яка не просто прибирає, а справді дбає про простір своїх клієнтів.
+</p>
+            <p>Вона вирішила ризикнути — і заснувала власну компанію. Перші прибирання Олена виконувала разом із двома
+            помічницями, орендуючи інвентар і їздячи на замовлення громадським транспортом. Завдяки відповідальності,
+            чесності та якісному сервісу компанія швидко здобула довіру клієнтів.</p>
+
+            <p>До 2021 року "Чисто.Pro" обслуговувала понад 300 постійних клієнтів: офіси, квартири, ресторани та салони
+            краси.
+            Ми вивчили кожен аспект клінінгу — від підбору екологічної хімії до роботи з делікатними поверхнями.
+</p>
+            <p>Сьогодні ми — команда з понад 30 професіоналів, власний автопарк, навчальний центр для нових працівників та
+            сучасні технології для контролю якості. Але наші цінності не змінилися: ми все ще віримо, що чистота — це не
+            тільки про зовнішній вигляд, а й про турботу, комфорт і довіру.</p>
+
+           <p>Ми прибираємо не просто кімнати — ми звільняємо простір для життя.</p> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="services">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h2>Наші послуги</h2>
+        <ul class="our-poslugy">
+          <li>Регулярне прибирання квартир та будинків</li>
+          <li>Офісне та корпоративне прибирання</li>
+          <li>Генеральне прибирання після ремонту</li>
+          <li>Хімчистка меблів та килимів</li>
+          <li>Миття вікон, фасадів, вітрин</li>
+          <li>Прибирання після заходів</li>
+          <li>Послуги для готелів, ресторанів, медичних закладів</li>
+        </ul>
+
+        <img src="65.png" alt="cleaning service" style="width:200px; border-radius:12px; margin-top:1rem;">
+
+      </div>
+      <div class="col-md-5">
+        <img src="img-2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="why">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Чому обирають нас?</h2>
+        <ul>
+          <li>Висококваліфікований персонал</li>
+          <li>Сучасне обладнання та екологічні засоби</li>
+          <li>Гнучкий графік і швидке реагування</li>
+          <li>Індивідуальний підхід до кожного клієнта</li>
+          <li>Доступні ціни та гарантія якості</li>
+        </ul>
+
+
+      </div>
+      <div class="col-md-6">
+          <img src="h.jpg" alt=""  >
+      </div>
+    </div>
+   
+
+  </div>
+
+  <section class="section" id="gallery">
+    <h2>Галерея</h2>
+    <div class="long-slider">
+      <div class="arrow-left">
+        <p> &lsaquo;</p>
+      </div>
+      <div class="arrow-right">
+        <p>&rsaquo;</p>
+      </div>
+      <div class="item-wrap">
+        <div class="slider-item"><img src="yy.pngц" alt=""></div>
+        <div class="slider-item"><img src="1.png" alt=""></div>
+        <div class="slider-item"><img src="2.jpg" alt=""></div>
+        <div class="slider-item"><img src="uyihk.jpg" alt=""></div>
+        <div class="slider-item"><img src="3.png" alt=""></div>
+        <div class="slider-item"><img src="wwwww.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <h2>Відгуки клієнтів</h2>
+    <blockquote>"Команда приїхала вчасно, прибрали ідеально. Дуже дякую!" — Марія С.</blockquote>
+    <blockquote>"Замовив генеральне прибирання — результат відмінний. Рекомендую." — Дмитро Л.</blockquote>
+    <blockquote>"Все було швидко, акуратно та професійно." — Ірина Ж.</blockquote>
+  </section>
+
+  <section class="section" id="partners">
+    <h2>Наші партнери</h2>
+    <div class="partners">
+      <img src="9.png">
+      <img src="99.jfif" alt="IICRC">
+      <img src="999.png" alt="Ecolab">
+      <img src="9999.png" alt="Ecolab">
+    </div>
+  </section>
+
+
+  <div class="cta">
+    <h2>Замовленя онлайн</h2>
+    <button class="btn btn-danger order-btn"> Замовити зараз </button>
+  </div>
+
+  <div class="form-register">
+
+    <div class="form">
+      <div class="close">
+        x
+      </div>
+      <h4>Реєстрація</h4>
+      <form action="index.html" name="f1">
+        <input type="text" required placeholder="Ім'я" name="name1" class="input">
+        <input type="text" required placeholder="Прізвище" name="name2" class="input">
+        <input type="email" required placeholder="E-mail" name="email1" class="input">
+        <input type="email" required placeholder="Підтвердіть e-mail" name="email2" class="input">
+        <input type="password" minlength="6" maxlength="12" required placeholder="Пароль" name="pass1" class="input">
+        <input type="password" required placeholder="Підтвердіть пароль" name="pass2" class="input">
+        <input type='tel' required placeholder="Мобільний телефон" name="tel" class="input">
+        <input type="radio" required name="radio1"> Чоловік
+        <input type="radio" name="radio1" class="radio"> Жінка
+        <input type="submit" value="Реєстрація" name="sab" class="input regButton">
+      </form>
+    </div>
+  </div>
+
+
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h2>Контакти</h2>
+          <p><strong>Телефон:</strong> +38 (097) 123-45-67</p>
+          <p><strong>Email:</strong> info@chysto-blysk.ua</p>
+          <p><strong>Адреса:</strong> м. Київ, вул. Прикладна, 10</p>
+        </div>
+        <div class="col-md-4">
+          <img src="y.jpg" alt="офіс компанії">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  </div>
+
+
+
+  <footer>
+    &copy; 2025 Чисто.Pro. Всі права захищено.
+  </footer>
+
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <script src="jfigug.js"></script>
+</body>
+
+</html>
